@@ -1,50 +1,13 @@
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f7f6;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-}
+body { font-family: 'Segoe UI', sans-serif; background-color: #f4f7f6; text-align: center; padding: 20px; }
 
-header { margin-bottom: 40px; }
+#hakkimda { max-width: 700px; margin: 40px auto; padding: 20px; background: white; border-radius: 15px; border-left: 5px solid #28a745; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
 
-#hakkimda {
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 15px;
-    border-left: 5px solid #28a745;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
+#projeler { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto; }
 
-#projeler {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    max-width: 900px;
-    margin: 0 auto;
-}
+.proje-karti { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
 
-.proje-karti {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
+.proje-karti img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; }
 
-.proje-karti:hover { transform: scale(1.03); }
-
-.indir-butonu {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 15px;
-    background-color: #28a745;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
+.indir-butonu { display: block; padding: 12px; margin-top: 15px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
 
 .indir-butonu:hover { background-color: #218838; }
